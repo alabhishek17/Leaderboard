@@ -1,0 +1,33 @@
+/* src/styles.css */
+
+/* Footer styles */
+.footer-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #4a90e2; /* Footer background color */
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .scrolling-footer {
+    display: flex;
+    width: fit-content;
+    animation: scroll-animation 20s linear infinite;
+  }
+  
+  .scrolling-footer img {
+    margin-right: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+    width: 200px;
+  }
+  
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
